@@ -37,3 +37,7 @@
      background-image: url('img/star.png');
  }
 
+.stars input:checked ~ label {
+    background-image: url('img/star.png');
+}
+
