@@ -1,1 +1,39 @@
-/* Пиши стили тут */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+
+
+ .stars {
+     display: flex;
+     flex-direction: row-reverse;
+     justify-content: center;
+     gap: 12px;
+ }
+
+ .stars input {
+     display: none;
+ }
+
+ .stars label {
+     display: inline-block;
+     width: 50px;
+     height: 50px;
+     background-image: url('img/star-empty.png');
+     background-size: cover;
+     transition: transform 0.2s;
+ }
+
+ .stars label:hover,
+ .stars label:hover~label {
+     background-image: url('img/star.png');
+ }
+
